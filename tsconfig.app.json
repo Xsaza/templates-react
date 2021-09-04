@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  // add options here latter
+}
