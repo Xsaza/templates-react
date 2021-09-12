@@ -31,6 +31,9 @@ const wpConfig: WpConfig = () => {
         },
       ],
     },
+    devServer: {
+      port: 3000,
+    },
     plugins: [
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'src/index.html')

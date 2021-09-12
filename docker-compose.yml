@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  frontend_1:
+    build:
+      dockerfile: ./ci/Dockerfile
+      context: .
+      args:
+        port_to_expose: 5000
+    image: react-test1:0.0.1
+    container_name: react-cont-1
+    ports:
+      - '5000:3000'
+
+  frontend_2:
+    build:
+      dockerfile: ./ci/Dockerfile
+      context: .
+      args:
+        port_to_expose: 6000
+    image: react-test2:0.0.1
+    container_name: react-cont-2
+    ports:
+      - '6000:3000'
