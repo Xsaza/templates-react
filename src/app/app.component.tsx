@@ -1,7 +1,13 @@
 import React from 'react';
 
+import { Router } from './router/router.component';
+
 export const AppComponent = () => {
+
   return (
-    <div>Hello from app component!</div>
+    <>
+      <div>this is header in app component!</div>
+      <Router></Router>
+    </>
   )
 };
