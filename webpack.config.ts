@@ -29,6 +29,14 @@ const wpConfig: WpConfig = () => {
             configFile: path.resolve(__dirname, 'tsconfig.app.json'),
           },
         },
+        {
+          test: /\.s?css$/,
+          use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader',
+          ],
+        },
       ],
     },
     devServer: {

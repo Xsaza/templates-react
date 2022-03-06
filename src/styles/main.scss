@@ -1,0 +1,14 @@
+@use './_util' as utility;
+@use './additional.scss';
+
+$colors: (
+  my-white: white,
+  my-black: black,
+  my-gray: gray,
+);
+
+body {
+  background-color: map-get($colors, my-gray);
+  @include utility.some-mixin(map-get($colors, my-white));
+}
+

@@ -7,7 +7,9 @@ import { MainComponent } from '../shared/components/main.component';
 export const Router: React.FC = () => {
   return (
     <BrowserRouter>
-      <Route>
+      <Route
+        path="/"
+      >
         <div>default text</div>
       </Route>
       <Route

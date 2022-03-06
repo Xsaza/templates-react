@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/main.scss';
 import { Router } from './router/router.component';
 
 export const AppComponent = () => {
